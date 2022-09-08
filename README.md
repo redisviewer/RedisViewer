@@ -1,11 +1,46 @@
 # redisviewer
 
 #### 介绍
-一款非常棒的Redis客户端工具
+
+一款超棒的redis客户端工具
+支持Windows、MacOS、Linux，方便不同平台开发者们使用！
+
+### JDK序列化查看器
+JDK字节码解码展示，全网唯一😎，老项目有救了
+基础类型、包装对象（list、set、map等等），展示类似IDEA的debug模式，不仅看得到还要合理好看
+![JDK序列化](https://foruda.gitee.com/images/1662602932900645594/474a2a84_968935.png "屏幕截图")
+
+### JSON编辑器
+JSON格式专业编辑器，语法提示、实时语法检查
+![输入图片说明](https://foruda.gitee.com/images/1662603092583364293/1ce522fb_968935.png "屏幕截图")
+
+### 大数据列表
+针对大数据量做了优化使用DOM虚拟滚动分片加载，千万数据量无压力渲染，解决同类软件痛点。（实测可见83.8w行，行高40px达到浏览器高度上限33554432px，剩余数据可通过关键字快速过滤出来，作者也在寻找完美显示方案，欢迎秀儿讨论）
+![输入图片说明](https://foruda.gitee.com/images/1662603298234763181/9a727658_968935.png "屏幕截图")
+
+### 归类分组
+常见使用树形来展示归类分组，大数据量情况下的树形将会卡爆，深有体会的小伙伴儿应该蛮多的吧
+另辟蹊径使用了页签导航的展现形式，充分发挥大数据列表的特性优势，完美解决大数据量分组树形的渲染问题
+![输入图片说明](https://foruda.gitee.com/images/1662603364908166350/1d229ada_968935.png "屏幕截图")
+
+
+### 控制台
+支持「直接模式」命令的控制台，再也不用ssh登录到服务器上面敲命令了
+![输入图片说明](https://foruda.gitee.com/images/1662603451075041629/725fb0de_968935.png "屏幕截图")
+
+### 导入导出
+开发人员最想干什么？当然是把现网（或另一环境）的数据导入到本地快速定位问题。特别推出导出小工具，可谓是研发利器！
+![输入图片说明](https://foruda.gitee.com/images/1662603483025666312/38ab8045_968935.png "屏幕截图")
+
+### 支持SSH：单机&集群
+同时支持单机与集群的SSH ，不少类似软件的支持度也相对欠缺。
+![输入图片说明](https://foruda.gitee.com/images/1662603540964783981/adf9738e_968935.png "屏幕截图")
+
 
 #### 软件架构
-软件架构说明
 
+Electron 9.x
+Golang 18.x
 
 #### 安装教程
 
@@ -19,19 +54,6 @@
 2.  xxxx
 3.  xxxx
 
-#### 参与贡献
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+#### 打赏支持
+![](https://foruda.gitee.com/images/1662602721400259841/0f2c822e_968935.png "屏幕截图")
