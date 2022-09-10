@@ -58,10 +58,21 @@ Golang 18.x
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+##### 1. 远程模式
+远程模式即分离模式，程序将优先访问远程RedisViewer的后端，本地后端将被自动屏蔽。
+带来的好处是：即使居家办公或redis服务器部署在公网，也能够以极高的速度快速访问、响应数据量比较多的redis服务器（远程RedisViewer需要跟redis服务器是局域网，网络通信效率极高）。
+###### 1.1 远程服务器要打开Redis Viewer（若远程为无界面的server系统，则需要执行`./redismanager -conf configs`）。
+###### 1.2 本地HOSTS添加如下域名：（注意替换远程Redis Viewer所在IP ==> 192.168.36.230）
+```
+# Redis Viewer 远程模式域名配置
+192.168.36.230 redis-viewer-remote
+```
+###### 注意：远程RedisViewer与本地的网络是通的：办公网络的话有时候需要拨VPN连接公司内网。远程RedisViewer需要跟redis服务器是局域网，网络通信效率极高。
 
+##### 2. SSH隧道
+本质上就是端口转发。它能够将其他 TCP 端口的网络数据通过 SSH 链接来转发，并且自动提供了相应的加密及解密服务。这一过程也被叫做“隧道”（tunneling），这是因为 SSH 为其他 TCP 链接提供了一个安全的通道来进行传输而得名。 SSH 端口转发能够提供两大功能： 1.加密 SSH Client 端至 SSH Server 端之间的通讯数据。 2.突破防火墙的限制完成一些之前无法建立的 TCP 连接
+###### 开启SSH隧道并填写正确的SSH信息
+![输入图片说明](https://foruda.gitee.com/images/1662603540964783981/adf9738e_968935.png "屏幕截图")
 
-#### 打赏支持
+#### 打赏支持作者
 ![打赏支持](https://foruda.gitee.com/images/1662602721400259841/0f2c822e_968935.png "请作者喝咖啡")
