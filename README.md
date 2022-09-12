@@ -52,9 +52,12 @@ Golang 18.x
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+通过本仓库的[Releases页面](https://gitee.com/onefineday/redisviewer/releases)下载Redis Viewer-xxx.exe文件，运行就可以安装Redis Viewer。 目前只支持x64平台。
+```
+Windows：Redis Viewer-x.x.x.exe
+MacOS：Redis Viewer-x.x.x.dmg
+Linux：Redis Viewer-x.x.x.deb、Redis Viewer-x.x.x.AppImage
+```
 
 #### 使用说明
 
