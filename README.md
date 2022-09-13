@@ -80,5 +80,5 @@ Linux --> Redis Viewer-x.x.x.deb、Redis Viewer-x.x.x.AppImage
 ###### 开启SSH隧道并正确填写
 ![输入图片说明](https://foruda.gitee.com/images/1662603540964783981/adf9738e_968935.png "屏幕截图")
 
-#### 支持
-![打赏支持](https://foruda.gitee.com/images/1662602721400259841/0f2c822e_968935.png "请作者喝咖啡")
+#### 请作者喝咖啡
+![](https://foruda.gitee.com/images/1662602721400259841/0f2c822e_968935.png "请作者喝咖啡")
