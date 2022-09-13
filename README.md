@@ -62,9 +62,9 @@ Linux --> Redis Viewer-x.x.x.deb、Redis Viewer-x.x.x.AppImage
 #### 使用说明
 
 ##### 1. 远程模式
-远程模式即分离模式，程序将优先访问远程RedisViewer的后端，本地后端将被自动屏蔽。
+远程模式即分离部署模式，程序将优先访问远程RedisViewer的后端，本地后端将被自动屏蔽。
 带来的好处是：即使居家办公或redis服务器部署在公网，也能够以极高的速度访问、响应数据量比较多的redis服务器（远程RedisViewer需要跟redis服务器是局域网，二者网络通信效率要高）。
-###### 1.1 远程服务器要打开Redis Viewer（若远程为无界面的server系统，则需要执行`./redismanager -conf configs`这里需要提取目标系统版本的相关文件自己部署，对动手能力有一定的要求）。
+###### 1.1 远程服务器要打开RedisViewer（若远程为无界面的server系统，则需要执行`./redismanager -conf configs`这里需要提取目标系统版本的相关文件自己部署，对动手能力有一定的要求）。
 ###### 1.2 本地HOSTS添加如下域名：（注意替换远程RedisViewer所在主机IP ==> 192.168.36.230）
 ```
 # Redis Viewer 远程模式域名优先
@@ -80,5 +80,5 @@ Linux --> Redis Viewer-x.x.x.deb、Redis Viewer-x.x.x.AppImage
 ###### 开启SSH隧道并正确填写
 ![输入图片说明](https://foruda.gitee.com/images/1662603540964783981/adf9738e_968935.png "屏幕截图")
 
-#### 打赏支持
+#### 支持
 ![打赏支持](https://foruda.gitee.com/images/1662602721400259841/0f2c822e_968935.png "请作者喝咖啡")
