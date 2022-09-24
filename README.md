@@ -1,9 +1,13 @@
 # Redis Viewer
 
 #### 介绍
-
-一款超棒的redis客户端工具
+优秀跨平台Redis可视化客户端工具—RedisViewer
+![输入图片说明](https://pic3.zhimg.com/v2-64916bd2e916ad5383082e2ac7827f3a_r.jpg)
 支持Windows、MacOS、Linux，方便不同平台开发者们使用！
+
+##### 后端重构
+使用golang重构后端，重构后启动速度快，内存足够小、实时自动伸缩
+![输入图片说明](https://pic3.zhimg.com/v2-853ac7ce96949dca770885bb5dbc0236_r.jpg)
 
 ##### JDK序列化查看器
 JDK字节码解码展示，全网唯一😎，老项目有救了
@@ -46,9 +50,10 @@ string类型的数据：展示时如果是JSON格式则将自动格式化方便�
 ![输入图片说明](https://pic4.zhimg.com/v2-8a20d3fbae16725a7102d4ab2efc313b_r.jpg)
 
 #### 软件架构
-
-Electron 9.x、
-Golang 18.x
+```
+Electron 9.x
+Golang 1.18.x
+```
 
 #### 安装教程
 
