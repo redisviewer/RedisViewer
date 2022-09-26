@@ -1,9 +1,8 @@
-# Redis Viewer
+# 优秀跨平台Redis可视化客户端工具—RedisViewer
 
 #### 介绍
-优秀跨平台Redis可视化客户端工具—RedisViewer
-![输入图片说明](https://pic3.zhimg.com/v2-64916bd2e916ad5383082e2ac7827f3a_r.jpg)
 支持Windows、MacOS、Linux，方便不同平台开发者们使用！
+![输入图片说明](https://pic3.zhimg.com/v2-64916bd2e916ad5383082e2ac7827f3a_r.jpg)
 
 ##### 后端重构
 使用golang重构后端，重构后启动速度快，内存足够小、实时自动伸缩
