@@ -69,11 +69,10 @@ Linux --> Redis Viewer-x.x.x.deb、Redis Viewer-x.x.x.AppImage
 远程模式即分离部署模式，程序将优先访问远程RedisViewer的后端，本地后端将被自动屏蔽。
 带来的好处是：即使居家办公或redis服务器部署在公网，也能够以极高的速度访问、响应数据量比较多的redis服务器（远程RedisViewer需要跟redis服务器是局域网，二者网络通信效率要高）。
 ###### 1.1 远程服务器要打开RedisViewer（若远程为无界面的server系统，则需要执行`./redismanager -conf configs`这里需要提取目标系统版本的相关文件自己部署，对动手能力有一定的要求）。
-###### 1.2 本地HOSTS添加如下域名：（注意替换远程RedisViewer所在主机IP ==> 192.168.36.230）
-```
-# Redis Viewer 远程模式域名优先
-192.168.36.230 redis-viewer-remote
-```
+###### 1.2 设置页面配置远程地址
+![设置配置](https://pic1.zhimg.com/v2-cb3bc87c927d5c059e0595668c4651ac_r.jpg)
+###### 1.3 切换配置的远程
+![远程切换](https://pic3.zhimg.com/v2-35d878b79d587081c0fa5796c5184846_r.jpg)
 ###### 注意：
 远程RedisViewer与本地的网络必须是通畅：办公网络的话有时候需要拨VPN连接公司内网。
 远程RedisViewer需要跟Redis服务器是局域网，二者网络通信效率要高。
