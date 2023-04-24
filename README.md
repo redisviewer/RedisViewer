@@ -21,7 +21,7 @@
 
 ### 下载地址：
 
-[RedisViewer官方版下载丨最新版下载丨绿色版下载丨APP下载-123云盘](www.123pan.com/s/Sxw9-WiAbv.html)
+[RedisViewer官方版下载丨最新版下载丨绿色版下载丨APP下载-123云盘](https://www.123pan.com/s/Sxw9-WiAbv.html)
 
 ### 后端重构
 
@@ -281,7 +281,7 @@ Linux --> Redis Viewer-x.x.x.deb、Redis Viewer-x.x.x.AppImage
 
 ### 下载地址：
 
-[RedisViewer官方版下载丨最新版下载丨绿色版下载丨APP下载-123云盘](www.123pan.com/s/Sxw9-WiAbv.html)
+[RedisViewer官方版下载丨最新版下载丨绿色版下载丨APP下载-123云盘](https://www.123pan.com/s/Sxw9-WiAbv.html)
 
 注意：1.4、1.5版本升级2.x版本，需要先删除用户目录下.redis_viewer文件夹，例如：
 
