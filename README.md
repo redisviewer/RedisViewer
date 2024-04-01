@@ -74,8 +74,8 @@ xml编辑器（自动识别）
 支持「直接模式」命令的控制台，再也不用ssh登录到服务器上面敲命令了
 
 MOVED自动跳到目标节点执行
+![image](https://github.com/redisviewer/RedisViewer/assets/12822830/5fa46269-6187-4aae-a5d0-0e4c7804b8e7)
 
-![](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/286cc7aeffe647ef84809aa2d6552fa3~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=1280\&h=790\&s=187442\&e=png\&b=f8f8f8)
 
 ### 导入导出
 
