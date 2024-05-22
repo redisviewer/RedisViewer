@@ -1,21 +1,23 @@
 ### 介绍
 
 1.  RedisViewer为一款追求极致性能（海量数据下低内存占用）、极简布局、高效交互、跨平台、支持反序列化Java字节码的redis可视化客户端工具。
-2.  软件运行机制：(1)拉取全量key (scan 0 match * count 5000)，(2)内存排序，(3)分组归纳，(4)异步结构索引分析。局域内网环境测试200万key拉取不到两秒，非局域内网且有连接大数据量(10万+)redis需求的，建议使用远程模式，因为第(1)步拉取大数据量在公网环境耗时较长，主要瓶颈可能是服务器的上行带宽。
-3.  渲染性能：大数据量(1万+)情况下同类软件由于渲染问题可能已经崩了，RedisViewer拥有经历多次重构迭代的虚拟滚动技术，针对rv的数据流特征进行调优，交互性能优秀不受数据量的影响。
-4.  本地已验证5000万key数据量redis服务器流畅使用，且内存占用低。
-5.  WEB技术客户端美观，能够支持、实现的交互方式更丰富
-6.  进化方向：解决研发、测试、运维工作中使用redis可视化工具的痛点问题。功能不是最多的，但关键功能经历多次进化，体验有保证。
-7.  兴趣主导的项目，进度随性。该软件并不适合所有人，使用时请斟酌自行判断。
-8.  有任何建议可以评论区留言或发送邮件124410675@qq.com
+1.  软件运行机制：(1)拉取key，(2)内存排序，(3)分组归纳，(4)异步结构索引分析。局域内网环境测试200万key不到两秒。
+1.  本地已验证5000万key数据量redis服务器流畅使用，且内存占用低。
+1.  渲染性能：大数据量(1万+)情况下同类软件由于渲染问题可能已经崩了，RedisViewer拥有经历多次重构迭代的虚拟显示技术，针对rv的数据流特征进行调优，交互性能优秀不受数据量的影响。
+1.  WEB技术客户端美观，能够支持、实现的交互方式更丰富
+1.  进化方向：解决研发、测试、运维工作中使用redis可视化工具的痛点问题。功能不是最多的，但关键功能经历多次进化深耕，体验有保证。
+1.  兴趣主导的项目，进度随性。该软件并不适合所有人，使用时请斟酌自行判断。
+1.  有任何建议可以评论区留言或发送邮件124410675@qq.com
 
 支持Windows、MacOS、Linux，方便不同平台开发者们使用！
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5b4393d78920479184607e0f409ebfd5~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a11248e8df8f4d81bc81f8c525745d79~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=720&h=449&s=69953&e=png&b=fefefe)
+
+添加图片注释，不超过 140 字（可选）
 
 ### 下载地址：
 
-[RedisViewer官方版下载丨最新版下载丨绿色版下载丨APP下载-123云盘](https://www.123pan.com/s/Sxw9-WiAbv.html)
+RedisViewer官方版下载丨最新版下载丨绿色版下载丨APP下载-123云盘​www.123pan.com/s/Sxw9-WiAbv.html
 
 ### 后端重构
 
@@ -29,7 +31,9 @@ RedisViewer构思阶段的第一个要解决的问题就是大量数据的展示
 
 针对大数据量做了优化：迭代调整了多个渲染方案，解决同类软件渲染时内存占用痛点。实测可见前100万数据，行高33px达到浏览器高度上限33554432px，剩余数据可通过关键字快速过滤出来，作者也在寻找完美显示方案，欢迎网友讨论献策
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/354d66b0ac4e466caedb5e052f99f9da~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3e7e7458413447d7b6349dc650017155~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=720&h=432&s=69742&e=png&b=fdfdfd)
+
+添加图片注释，不超过 140 字（可选）
 
 ### 支持结构化搜索
 
@@ -37,7 +41,9 @@ RedisViewer构思阶段的第一个要解决的问题就是大量数据的展示
 
 另外支持搜索历史记录、检索
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a10ca039e1cd45d48c2d4cb361fcfdce~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/680deab6d5174f2f8069899396b234b5~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=720&h=432&s=48139&e=png&b=fdfdfd)
+
+添加图片注释，不超过 140 字（可选）
 
 ### Java反序列化查看器
 
@@ -45,9 +51,9 @@ Java字节码反序列化解码展示，全网唯一 ，终于知道老项目red
 
 支持数据结构：基础类型、包装类型、一维数组、ArrayList、LinkedList、HashMap、HashSet、Date、Time、TimeStamp等等
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7f6b2bc9e6d843ea81a9dd2af718ec35~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a58802b3c02b48099f057184fc624650~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=720&h=432&s=73000&e=png&b=fdfdfd)
 
-JDK序列化
+添加图片注释，不超过 140 字（可选）
 
 ### JSON编辑器
 
@@ -55,11 +61,13 @@ JDK序列化
 
 支持超多语言，redis里面存代码也能读了
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e570f490c3734af3ae5ec874ccd81431~tplv-k3u1fbpfcp-zoom-1.image)
-json编辑器（自动识别）
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6b46b27471d243da838a5fef72dbcae8~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=720&h=432&s=97478&e=png&b=fdfdfd)
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/82eb8c7a1e2943ec812a8682131bd60a~tplv-k3u1fbpfcp-zoom-1.image)
-xml编辑器（自动识别）
+添加图片注释，不超过 140 字（可选）
+
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/af54b3e6c5154a5f85fdf2b31b06ec9c~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=720&h=432&s=66869&e=png&b=fdfdfd)
+
+添加图片注释，不超过 140 字（可选）
 
 ### 归类分组
 
@@ -67,49 +75,57 @@ xml编辑器（自动识别）
 
 软件使用了页签导航的展现形式，充分发挥大数据列表的优势，算是另辟蹊径的解决大数据量分组树形的渲染问题
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b96a3e49b40049ad830babb5b891934e~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c73dfa2c5c054ceeabf73a75b781735b~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=720&h=432&s=60034&e=png&b=fdfdfd)
+
+添加图片注释，不超过 140 字（可选）
 
 ### 控制台
 
-支持「直接模式」命令的控制台，再也不用ssh登录到服务器上面敲命令了
+支持「直接模式」命令的控制台，同时支持目标节点切换，再也不用ssh登录到服务器上面敲命令了
 
 MOVED自动跳到目标节点执行
-![image](https://github.com/redisviewer/RedisViewer/assets/12822830/5fa46269-6187-4aae-a5d0-0e4c7804b8e7)
 
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8fe89078603941cbab85d3afb090f0ec~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=720&h=432&s=113175&e=png&b=3c3f41)
+
+添加图片注释，不超过 140 字（可选）
 
 ### 导入导出
 
 开发人员最想干什么？当然是把现网（或另一环境）的数据导入到本地快速定位问题。特别推出导入导出功能，可谓是研发利器
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2a80743ad82b48a68000fb81cbef3969~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7849a355502547d78ae99d8ca940cec8~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=720&h=444&s=73430&e=png&b=fcfcfc)
+
+输入图片说明
 
 ### 支持SSH：单机&集群
 
 同时支持单机与集群的SSH ，不少类似软件的支持度也相对欠缺。
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/847948b7ec9c41ce89762e05cf2893a9~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f15c30303c914243a4cf2c37285700e1~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=720&h=432&s=44792&e=png&b=fcfcfc)
 
-### 自动识别集群
-
-只需要录入redis集群中任意1个节点HOST、PORT信息，软件将自动识别集群
+添加图片注释，不超过 140 字（可选）
 
 ### JSON自动格式化展示
 
 string类型的数据：展示时如果是JSON格式则将自动格式化方便阅读，保存时会进行JSON格式再校验、压缩、提交
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c4c8c5c3680841bb8a8a3bcd1060f005~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ffc19d19b2b1466987df21ec8f270cc6~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=720&h=423&s=128832&e=png&b=fdfdfd)
+
+添加图片注释，不超过 140 字（可选）
 
 ### 极速索引—不分页
 
 关键字极速过滤（内存），相比同类软件更便捷、更快的索引数据，消灭丑陋的分页组件
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a3f9b64bbb0547f1b4773c97f715592f~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b46aa927d1a44e25b36b4235229b7580~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=720&h=444&s=27582&e=jpg&b=fcfcfc)
+
+输入图片说明
 
 ### 软件架构
 
 ```
-Electron 9.x
-Golang 1.19.x
+Electron 28.x
+Golang 1.22.x
 ```
 
 ### 安装教程
@@ -117,9 +133,13 @@ Golang 1.19.x
 下载Redis Viewer-xxx安装包，运行就可以安装Redis Viewer。
 
 ```
-Windows --> Redis Viewer-x.x.x.exe
-MacOS --> Redis Viewer-x.x.x.dmg
-Linux --> Redis Viewer-x.x.x.deb、Redis Viewer-x.x.x.AppImage
+Windows --> Redis Viewer-win-2.4.2.exe
+MacOS --> Redis Viewer-mac-2.4.2.dmg
+Linux --> Redis Viewer--linux-2.4.2.deb
+    Debian系: .deb
+    Arch系: .pacman
+    红帽系: .rpm
+    通用: .AppImage .zip 
 ```
 
 ### 使用说明
@@ -130,7 +150,9 @@ Linux --> Redis Viewer-x.x.x.deb、Redis Viewer-x.x.x.AppImage
 
 远程模式即远程接力模式，程序将直接访问远端RedisViewer进行网络接力，屏蔽高延迟网络差异，获得极速访问redis服务器的能力。
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ecb0ff71deb94232a72bafdcdeaa22c7~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/03ea1ea0d5f64e1f83b95ab87e1a6df7~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=746&h=352&s=20306&e=png&b=fdfdfd)
+
+添加图片注释，不超过 140 字（可选）
 
 带来的好处是：即使居家办公或redis服务器部署在公网，也能够以极高的网络速度访问、获取数据量比较多的redis服务器（远程RedisViewer需要跟redis服务器是局域网，二者网络通信效率要高）。
 
@@ -138,11 +160,13 @@ Linux --> Redis Viewer-x.x.x.deb、Redis Viewer-x.x.x.AppImage
 
 ### 1.2 设置页面配置远程地址
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5b130e278f9044c0ab1b60afdf5e7fae~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/35af056b8a51446b8d3ad660d3ddfc71~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=720&h=450&s=81235&e=png&b=fefefe)
+
+添加图片注释，不超过 140 字（可选）
 
 ### 1.3 切换配置的远程
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/021fcc8166ca49e78ccd7c9316157585~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/576d3dca9cb64dd2b17930d7092e252c~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=720&h=444&s=21718&e=jpg&b=fdfdfd)
 
 远程切换
 
@@ -158,30 +182,30 @@ Linux --> Redis Viewer-x.x.x.deb、Redis Viewer-x.x.x.AppImage
 
 ### 开启SSH隧道并正确填写
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6858686b520547a0a41488770f66dc2d~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e851266da2cc40b7b79ff7857e746acc~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=720&h=432&s=43951&e=png&b=fefefe)
+
+添加图片注释，不超过 140 字（可选）
 
 ### 反馈通道
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/375e523ea5094aa78b3db85710f85408~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b3846da456944e338f8313f937bdc584~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=720&h=432&s=50137&e=png&b=fcfcfc)
+
+添加图片注释，不超过 140 字（可选）
 
 其他类似软件
 
 之前介绍过几款类似的工具，他们分别是RedisView、WebRedisManager、RedisDesktopManager、RedisPlus、AnotherRedisDesktopManager等，也基本满足了开发者的需求，也都会有不足之处，感兴趣的小伙伴们可以自行搜索或者好看笔者以往的文章，此处不再详细介绍！
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/24d3dbd251504d66b484af805340d88f~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a516bc99560948a0b745912303445d3f~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=640&h=360&s=40444&e=jpg&b=e2e1e1)
+
+添加图片注释，不超过 140 字（可选）
 
 ## 总结
-
 好用的软件千千万，好用的Redis客户端管理软件可真不多，本文向大家介绍了这样一款综合其他同类软件优点，又扩展了一些特色功能的RedisViewer，如果你有类似的需求不妨尝试下这款工具，或许能带给你一些惊喜！
 
 ### 下载地址：
-
-[RedisViewer官方版下载丨最新版下载丨绿色版下载丨APP下载-123云盘](https://www.123pan.com/s/Sxw9-WiAbv.html)
-
 注意：1.4、1.5版本升级2.x版本，需要先删除用户目录下.redis_viewer文件夹，例如：
-
-> C:\Users\Administrator\.redis_viewer
-> /home/zhang3/.redis_viewer
+> C:\Users\Administrator\.redis_viewer /home/zhang3/.redis_viewer
 
 #### 请作者喝咖啡
 <img src="https://foruda.gitee.com/images/1662602721400259841/0f2c822e_968935.png" alt="drawing" width="260"/>
