@@ -16,8 +16,8 @@
 添加图片注释，不超过 140 字（可选）
 
 ### 下载地址：
+RedisViewer官方版下载丨www.123pan.com/s/Sxw9-WiAbv.html
 
-RedisViewer官方版下载丨最新版下载丨绿色版下载丨APP下载-123云盘​www.123pan.com/s/Sxw9-WiAbv.html
 
 ### 后端重构
 
@@ -204,6 +204,9 @@ Linux --> Redis Viewer--linux-2.4.2.deb
 好用的软件千千万，好用的Redis客户端管理软件可真不多，本文向大家介绍了这样一款综合其他同类软件优点，又扩展了一些特色功能的RedisViewer，如果你有类似的需求不妨尝试下这款工具，或许能带给你一些惊喜！
 
 ### 下载地址：
+RedisViewer官方版下载丨www.123pan.com/s/Sxw9-WiAbv.html
+
+
 注意：1.4、1.5版本升级2.x版本，需要先删除用户目录下.redis_viewer文件夹，例如：
 > C:\Users\Administrator\.redis_viewer /home/zhang3/.redis_viewer
 
