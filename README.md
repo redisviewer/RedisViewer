@@ -14,7 +14,7 @@
 系统版本要求：
     macos >= 10.14.x
     windows >= 10
-    linux >= 未验证
+    linux 未验证
 ```
 <img width="1280" alt="图片" src="https://github.com/user-attachments/assets/8fd24a2a-d5b8-4ce8-a5b0-21bd154b7acf">
 
