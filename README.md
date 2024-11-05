@@ -10,6 +10,12 @@
 1.  有任何建议可以评论区留言或发送邮件124410675@qq.com
 
 支持Windows、MacOS、Linux，方便不同平台开发者们使用！
+```
+系统版本要求：
+    macos >= 10.14.x
+    windows >= 10
+    linux >= 未验证
+```
 <img width="1280" alt="图片" src="https://github.com/user-attachments/assets/8fd24a2a-d5b8-4ce8-a5b0-21bd154b7acf">
 
 添加图片注释，不超过 140 字（可选）
