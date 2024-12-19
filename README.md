@@ -132,55 +132,6 @@ string、xml类型的数据：展示时如果是JSON格式则将自动格式化�
         红帽系: .rpm
         通用: .AppImage .zip 
 
-### 使用说明
-
-### 1. 远程模式
-
-> 访问非局域网redis服务器时，10万以上大数据量key的获取时间成倍增加... 主要瓶颈可能是服务器的上行带宽。
-
-远程模式即远程接力模式，程序将直接访问远端RedisViewer进行网络接力，屏蔽高延迟网络差异，获得极速访问redis服务器的能力。
-
-![](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/bf12d147b9a64adebded89e797806d4d~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgUmVkaXNWaWV3ZXI=:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTgyMDQ0Njk4NzEyNjc0OSJ9&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1735192115&x-orig-sign=V7WVVPcjfvU1cRFaFFa%2B7I%2FRj24%3D)
-
-
-
-带来的好处是：即使居家办公或redis服务器部署在公网，也能够以极高的网络速度访问、获取数据量比较多的redis服务器（远程RedisViewer需要跟redis服务器是局域网，二者网络通信效率要高）。
-
-### 1.1 远程服务器要打开RedisViewer（若远程为无界面的server系统，则需要执行./redismanager -conf configs这里需要提取目标系统版本的相关文件自己部署，对动手能力有一定的要求）。
-
-### 1.2 设置页面配置远程地址
-
-![](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/bec31a7b2b5344e7b2e0a189d539d822~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgUmVkaXNWaWV3ZXI=:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTgyMDQ0Njk4NzEyNjc0OSJ9&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1735192115&x-orig-sign=pnmHtUXfYO1UYi8chdD2r42XH%2Fg%3D)
-
-
-
-### 1.3 切换配置的远程
-
-![](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/db5433d125114b568c025099ed48e55f~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgUmVkaXNWaWV3ZXI=:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTgyMDQ0Njk4NzEyNjc0OSJ9&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1735192115&x-orig-sign=kVTCEzQWvVqC%2FL7U8EV5HTP8uws%3D)
-
-远程切换
-
-### 注意：
-
-远程RedisViewer跟Redis服务器二者网络效率要高，必须是局域内网。
-
-10万以上数据量key的reids服务器，由于拉取key数量较大，建议使用远程模式享受远程的高性能网络（适用居家办公），10万以下本地依然效率很高
-
-### 2. SSH隧道
-
-本质上就是端口转发。它能够将其他 TCP 端口的网络数据通过 SSH 链接来转发，并且自动提供了相应的加密及解密服务。这一过程也被叫做“隧道”（tunneling），这是因为 SSH 为其他 TCP 链接提供了一个安全的通道来进行传输而得名。 SSH 端口转发能够提供两大功能： 1.加密 SSH Client 端至 SSH Server 端之间的通讯数据。 2.突破防火墙的限制完成一些之前无法建立的 TCP 连接。
-
-### 开启SSH隧道并正确填写
-
-![](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/cd0ee188e61c4b59abf4d8e204ab6dc3~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgUmVkaXNWaWV3ZXI=:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTgyMDQ0Njk4NzEyNjc0OSJ9&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1735192115&x-orig-sign=5ywPG5oIy41gZdS3IskcPkPEOgE%3D)
-
-
-
-### 反馈通道
-
-![](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/fe0b39bb08a64e26a5d4b06e3a386f10~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAgUmVkaXNWaWV3ZXI=:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTgyMDQ0Njk4NzEyNjc0OSJ9&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1735192115&x-orig-sign=RG%2FSbVhIRQ%2BUjB2wO6pULIzpris%3D)
-
-
 
 其他类似软件
 
