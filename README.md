@@ -12,7 +12,7 @@
     支持Windows、MacOS、Linux，方便不同平台开发者们使用！ 
     系统版本要求：
         macos >= 10.14.x
-        windows >= 7
+        windows >= 8
         linux 未验证
 
 ### 下载地址：
