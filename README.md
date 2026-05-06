@@ -13,7 +13,7 @@
     系统版本要求：
         macos >= 10.14.x
         windows >= 8
-        linux 未验证
+        linux (flatpak环境)
 
 ### 下载地址：
 
