@@ -1,10 +1,11 @@
 {
-  "versionTag": "v3.0.0",
+  "versionTag": "v3.1.0",
   "versionName": "首页移植完善、WebDAV同步",
   "versionContents": [
     "首页移植性能监控、服务信息、数据、客户端、慢日志",
     "连接密码加密：仅限本机RedisViewer可解",
     "前后端内存调优：核心逻辑优化重构",
+    "发布订阅上线",
     "支持 WebDAV 同步(密码存储于系统钥匙链)",
     "压缩精简分组",
     "TTL快捷设置",
