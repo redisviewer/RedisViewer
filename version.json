@@ -1,10 +1,12 @@
 {
   "versionTag": "v3.1.0",
-  "versionName": "发布订阅上线、隐私政策",
+  "versionName": "发布订阅、性能分析、隐私政策",
   "versionContents": [
-    "发布订阅上线",
+    "发布订阅",
+    "BigKey分析",
+    "HotKey分析",
     "隐私策略",
-    "CPU占用统计图表完善",
+    "性能监控完善",
     "WebDAV同步完善"
   ],
   "url": "https://www.guangyapan.com/s/1893305391470878805_aeYeUSbIXUmlUXkR"
