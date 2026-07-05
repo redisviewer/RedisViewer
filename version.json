@@ -5,6 +5,7 @@
     "命令维度分析CommandStates",
     "支持多DB选择器",
     "自动连接末次DB",
+    "优化 key 列表批量选择交互",
     "控制台文本选中缺陷修复"
   ],
   "home": "https://redisviewer.com/",
