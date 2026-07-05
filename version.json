@@ -1,13 +1,11 @@
 {
-  "versionTag": "v3.1.0",
-  "versionName": "发布订阅、性能分析、隐私政策",
+  "versionTag": "v3.2.0",
+  "versionName": "命令维度分析CommandStates",
   "versionContents": [
-    "发布订阅",
-    "BigKey分析",
-    "HotKey分析",
-    "隐私策略",
-    "性能监控完善",
-    "WebDAV同步完善"
+    "命令维度分析CommandStates",
+    "支持多DB选择器",
+    "自动连接末次DB",
+    "控制台文本选中缺陷修复"
   ],
   "home": "https://redisviewer.com/",
   "url": "https://www.guangyapan.com/s/1893305391470878805_aeYeUSbIXUmlUXkR"
