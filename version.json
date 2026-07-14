@@ -1,12 +1,15 @@
 {
-  "versionTag": "v3.2.0",
-  "versionName": "命令维度分析CommandStates",
+  "versionTag": "v3.2.1",
+  "versionName": "Java反序列化全面支持",
   "versionContents": [
-    "命令维度分析CommandStates",
-    "支持多DB选择器",
-    "自动连接末次DB",
-    "优化 key 列表批量选择交互",
-    "控制台文本选中缺陷修复"
+    "协议基础：byte、char、short、int、long、float、double、boolean、String、null、TC_REFERENCE、数组、枚举、Serializable POJO、writeObject、Externalizable v2、TC_PROXYCLASSDESC",
+    "List：ArrayList、Vector、Stack、LinkedList、ArrayDeque",
+    "Set：HashSet、LinkedHashSet、TreeSet、EnumSet",
+    "Map：HashMap、LinkedHashMap、Hashtable、Properties、TreeMap、ConcurrentHashMap、EnumMap",
+    "队列与其它：PriorityQueue、CollSer（List.of / Set.of / Map.of）",
+    "旧日期：java.util.Date、java.sql.Date、java.sql.Time、java.sql.Timestamp",
+    "java.time：Duration、Instant、LocalDate、LocalTime、LocalDateTime、ZonedDateTime、ZoneId、ZoneOffset、OffsetTime、OffsetDateTime、Year、YearMonth、MonthDay、Period",
+    "值对象：Byte、Boolean、Character、Short、Integer、Long、Float、Double、String、BigInteger、BigDecimal、UUID、BitSet、AtomicInteger、AtomicLong、AtomicBoolean、AtomicReference、LongAdder、DoubleAdder、java.lang.reflect.Proxy"
   ],
   "home": "https://redisviewer.com/",
   "url": "https://redisviewer.com/download"
