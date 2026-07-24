@@ -1,15 +1,16 @@
 {
-  "versionTag": "v3.2.1",
-  "versionName": "Java反序列化全面支持",
+  "versionTag": "v3.3.0",
+  "versionName": "支持收藏与常用键、视图切换",
   "versionContents": [
-    "协议基础：byte、char、short、int、long、float、double、boolean、String、null、TC_REFERENCE、数组、枚举、Serializable POJO、writeObject、Externalizable v2、TC_PROXYCLASSDESC",
-    "List：ArrayList、Vector、Stack、LinkedList、ArrayDeque",
-    "Set：HashSet、LinkedHashSet、TreeSet、EnumSet",
-    "Map：HashMap、LinkedHashMap、Hashtable、Properties、TreeMap、ConcurrentHashMap、EnumMap",
-    "队列与其它：PriorityQueue、CollSer（List.of / Set.of / Map.of）",
-    "旧日期：java.util.Date、java.sql.Date、java.sql.Time、java.sql.Timestamp",
-    "java.time：Duration、Instant、LocalDate、LocalTime、LocalDateTime、ZonedDateTime、ZoneId、ZoneOffset、OffsetTime、OffsetDateTime、Year、YearMonth、MonthDay、Period",
-    "值对象：Byte、Boolean、Character、Short、Integer、Long、Float、Double、String、BigInteger、BigDecimal、UUID、BitSet、AtomicInteger、AtomicLong、AtomicBoolean、AtomicReference、LongAdder、DoubleAdder、java.lang.reflect.Proxy"
+    "支持收藏键与收藏分组（持久化，可同步）",
+    "自动记录常用键（按点击次数，仅本机）",
+    "支持全部键 / 收藏键 / 常用键视图切换",
+    "List 添加支持头部 / 尾部插入",
+    "Hash 添加支持仅字段不存在时写入 (NX)",
+    "Zset 添加支持仅存在 (XX) / 仅不存在 (NX)",
+    "List / Hash / Set / Zset / Stream 支持连续添加",
+    "优化内存搜索与 DB SCAN 联动",
+    "修复连续分隔符分组 Tab 显示异常"
   ],
   "home": "https://redisviewer.com/",
   "url": "https://redisviewer.com/download"
