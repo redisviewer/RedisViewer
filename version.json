@@ -10,6 +10,7 @@
     "Zset 添加支持仅存在 (XX) / 仅不存在 (NX)",
     "List / Hash / Set / Zset / Stream 支持连续添加",
     "优化内存搜索与 DB SCAN 联动",
+    "支持html/yaml自动识别语法与格式化",
     "修复连续分隔符分组 Tab 显示异常"
   ],
   "home": "https://redisviewer.com/",
