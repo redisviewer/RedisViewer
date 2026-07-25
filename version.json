@@ -1,15 +1,16 @@
 {
-  "versionTag": "v3.2.1",
-  "versionName": "Java反序列化全面支持",
+  "versionTag": "v3.2.2",
+  "versionName": "集合功能扩展、搜索交互优化",
   "versionContents": [
-    "协议基础：byte、char、short、int、long、float、double、boolean、String、null、TC_REFERENCE、数组、枚举、Serializable POJO、writeObject、Externalizable v2、TC_PROXYCLASSDESC",
-    "List：ArrayList、Vector、Stack、LinkedList、ArrayDeque",
-    "Set：HashSet、LinkedHashSet、TreeSet、EnumSet",
-    "Map：HashMap、LinkedHashMap、Hashtable、Properties、TreeMap、ConcurrentHashMap、EnumMap",
-    "队列与其它：PriorityQueue、CollSer（List.of / Set.of / Map.of）",
-    "旧日期：java.util.Date、java.sql.Date、java.sql.Time、java.sql.Timestamp",
-    "java.time：Duration、Instant、LocalDate、LocalTime、LocalDateTime、ZonedDateTime、ZoneId、ZoneOffset、OffsetTime、OffsetDateTime、Year、YearMonth、MonthDay、Period",
-    "值对象：Byte、Boolean、Character、Short、Integer、Long、Float、Double、String、BigInteger、BigDecimal、UUID、BitSet、AtomicInteger、AtomicLong、AtomicBoolean、AtomicReference、LongAdder、DoubleAdder、java.lang.reflect.Proxy"
+    "List 添加支持头部 / 尾部插入",
+    "Hash 添加支持仅字段不存在时写入 (NX)",
+    "Zset 添加支持仅存在 (XX) / 仅不存在 (NX)",
+    "List / Hash / Set / Zset / Stream 支持连续添加",
+    "内存搜索一键转化DB SCAN",
+    "详情页支持一键复制键名",
+    "修复二进制编解码损坏并支持控制台 \x 粘贴",
+    "支持html/yaml自动识别语法与格式化",
+    "修复连续分隔符分组 Tab 显示异常"
   ],
   "home": "https://redisviewer.com/",
   "url": "https://redisviewer.com/download"
