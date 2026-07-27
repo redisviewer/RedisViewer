@@ -6,6 +6,7 @@
     "Hash 添加支持仅字段不存在时写入 (NX)",
     "Zset 添加支持仅存在 (XX) / 仅不存在 (NX)",
     "List / Hash / Set / Zset / Stream 支持连续添加",
+    "List / Hash / Set / Zset / Stream 编辑器支持拉伸",
     "控制台命令提示国际化",
     "内存搜索一键转化DB SCAN",
     "详情页支持一键复制键名",
