@@ -1,18 +1,16 @@
 {
-  "versionTag": "v3.2.2",
-  "versionName": "集合功能扩展、搜索交互优化",
+  "versionTag": "v3.3.0",
+  "versionName": "收藏键视图、常用键视图",
   "versionContents": [
-    "List 添加支持头部 / 尾部插入",
-    "Hash 添加支持仅字段不存在时写入 (NX)",
-    "Zset 添加支持仅存在 (XX) / 仅不存在 (NX)",
-    "List / Hash / Set / Zset / Stream 支持连续添加",
-    "List / Hash / Set / Zset / Stream 编辑器支持拉伸",
-    "控制台命令提示国际化",
-    "内存搜索一键转化DB SCAN",
-    "详情页支持一键复制键名",
-    "支持html/yaml自动识别语法与格式化",
-    "修复二进制编解码损坏并支持控制台 \\x 粘贴",
-    "修复连续分隔符分组 Tab 显示异常"
+        "支持切换收藏视图",
+        "支持切换常用视图",
+        "哨兵探测与错误提示增强",
+        "结构化搜索可配置",
+        "Scan 免确认可配置",
+        "统一脱敏：界面日志",
+        "虚拟滚动列表体验优化",
+        "支持 Linux arm64 发布包",
+        "支持 Linux bin 压缩包"
   ],
   "home": "https://redisviewer.com/",
   "url": "https://redisviewer.com/download"
