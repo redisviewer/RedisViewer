@@ -1,16 +1,19 @@
 {
-  "versionTag": "v3.3.0",
-  "versionName": "收藏键视图、常用键视图",
+  "versionTag": "v3.2.3",
+  "versionName": "支持Linux arm64、虚拟滚动与连接体验优化",
   "versionContents": [
-        "支持切换收藏视图",
-        "支持切换常用视图",
-        "哨兵探测与错误提示增强",
+        "支持 Linux arm64 发布包",
+        "支持 Linux bin 压缩包",
+        "虚拟滚动列表超限后按比例滚动",
+        "虚拟滚动列表体验优化",
+        "哨兵探测与连接修复",
         "结构化搜索可配置",
         "Scan 免确认可配置",
         "统一脱敏：界面日志",
-        "虚拟滚动列表体验优化",
-        "支持 Linux arm64 发布包",
-        "支持 Linux bin 压缩包"
+        "统一错误提示增强",
+        "修复连接超时不生效问题",
+        "修复子编辑器拉伸后被盖住问题",
+        "修复xml语法识别问题"
   ],
   "home": "https://redisviewer.com/",
   "url": "https://redisviewer.com/download"
