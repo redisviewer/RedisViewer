@@ -1,4 +1,4 @@
-### 支持千万级数据量的 Redis 桌面客户端—RedisViewer
+### 面向千万级 Redis 数据的桌面客户端 RedisViewer
 <img width="1280" alt="image" src="https://github.com/user-attachments/assets/00e2edc6-9ca3-48f5-9d7b-a0e38b07e380" />
 
 1.  RedisViewer为一款追求极致性能、低内存占用、极简布局、高效交互、跨平台、支持反序列化Java字节码的redis桌面客户端。
