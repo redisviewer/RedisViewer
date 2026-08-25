@@ -1,4 +1,4 @@
-### 面向千万级数据量的 Redis 桌面客户端 RedisViewer
+## 面向千万级数据量的 Redis 桌面客户端 RedisViewer
 <img width="1280" alt="image" src="https://github.com/user-attachments/assets/00e2edc6-9ca3-48f5-9d7b-a0e38b07e380" />
 
 1.  RedisViewer为一款追求极致性能、低内存占用、极简布局、高效交互、跨平台、支持反序列化Java字节码的redis桌面客户端。
@@ -24,7 +24,7 @@
 RedisViewer构思阶段的第一个要解决的问题就是大量数据的展示渲染。也是该软件的核心功能，其多个组件在用：key列表、list/set/zset/hash编辑器
 
 针对大数据量优化：迭代调整了多个渲染方案，解决同类软件渲染时内存占用痛点。
-# 千万级以上所有数据可见可滚动，突破浏览器高度上限33554432px的滚动方案已实现。
+#### 千万级以上所有数据可见可滚动，突破浏览器高度上限33554432px的滚动方案已实现。
 
 <img width="1280" alt="image" src="https://github.com/user-attachments/assets/da64b24f-f22a-4148-8d37-55f1fea3087d" />
 
