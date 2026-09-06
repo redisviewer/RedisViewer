@@ -1,6 +1,6 @@
 # RedisViewer 隐私政策
 
-更新日期：2026-05-20
+更新日期：2026-09-06
 
 RedisViewer 尊重你的隐私。本政策说明 RedisViewer 如何处理匿名基础统计数据，以及哪些数据不会被收集。
 
@@ -66,4 +66,5 @@ RedisViewer 已关闭 Umami 的自动页面追踪，仅在你同意后发送必�
 如果你对本隐私政策或匿名统计有疑问，可以通过 GitHub Issues 或邮箱联系我们：
 
 https://github.com/redisviewer/RedisViewer/issues
+
 support@redisviewer.com
