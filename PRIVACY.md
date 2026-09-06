@@ -18,9 +18,6 @@ RedisViewer 的匿名统计默认关闭。只有在你点击“接受”或在�
 - 操作系统类型
 - CPU 架构
 - 应用语言
-- 启动事件
-- Redis 连接数量（仅数量，不包含连接地址或连接名称）
-- WebDAV 同步是否启用（仅 `true` 或 `false`，不包含服务地址、账号、目录或同步组名）
 
 RedisViewer 不会主动向统计事件中加入你的姓名、邮箱、账号标识或其他直接身份信息。
 
@@ -66,6 +63,7 @@ RedisViewer 已关闭 Umami 的自动页面追踪，仅在你同意后发送必�
 
 ## 7. 联系方式
 
-如果你对本隐私政策或匿名统计有疑问，可以通过 GitHub Issues 联系我们：
+如果你对本隐私政策或匿名统计有疑问，可以通过 GitHub Issues 或邮箱联系我们：
 
 https://github.com/redisviewer/RedisViewer/issues
+support@redisviewer.com
